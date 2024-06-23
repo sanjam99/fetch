@@ -52,11 +52,10 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ user, onClick }) => {
       ) : (
         <FiUser className="w-12 h-12 text-gray-500" />
       )}
-      <div>
-        <h1 className="text-3xl font-bold text-center mb-2">
-          {user.profile.firstName} {user.profile.lastName}
-        </h1>
-        <h2 className="text-lg font-semibold">{user.profile.username}</h2>
+      <div className="hover:text-white transition-colors">
+        <h2 className="text-lg font-semibold border-b pb-1">{`${user.profile.firstName} ${user.profile.lastName}`}</h2>
+        <p className="">{user.jobTitle}</p>
+        <p className="">{user.profile.username}</p>
       </div>
     </div>
     </motion.div>

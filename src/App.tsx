@@ -6,6 +6,7 @@ import { User } from './types';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import BarLoader from './components/BarLoader';
 import ErrorComponent from './components/ErrorComponent';
+import { AuroraHero } from './components/AuroraHero';
 
 const fetchUsers = async (): Promise<User[]> => {
   const response = await fetch('https://602e7c2c4410730017c50b9d.mockapi.io/users');
@@ -49,8 +50,9 @@ const App: React.FC = () => {
 )
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-semibold mb-4">Profiles</h1>
+    <div className="">
+      {/* <h1 className="text-2xl font-semibold mb-4">Profiles</h1> */}
+      <AuroraHero />
       {data && data.length > 0 ? (
         data.map((item) => (
           <div className='p-2'>

@@ -57,7 +57,7 @@ export const AuroraHero = () => {
           }}
           className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
         >
-          Start Scrolling!
+          Start Scrolling to see LocoMotion Effect!
           <FiArrowRight className="transition-transform group-hover:-rotate-90 group-active:-rotate+12" />
         </motion.button>
       </div>

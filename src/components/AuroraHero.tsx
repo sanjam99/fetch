@@ -2,6 +2,7 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import { FiArrowRight } from "react-icons/fi";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import {
   useMotionTemplate,
   useMotionValue,
@@ -57,9 +58,11 @@ export const AuroraHero = () => {
           }}
           className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
         >
-          Start Scrolling to see LocoMotion Effect!
+          <AnchorLink href="#here">
+         <button>Start Scrolling to see LocoMotion Effect!</button> </AnchorLink>
           <FiArrowRight className="transition-transform group-hover:-rotate-90 group-active:-rotate+12" />
         </motion.button>
+        
       </div>
 
       <div className="absolute inset-0 z-0">
@@ -68,5 +71,6 @@ export const AuroraHero = () => {
         </Canvas>
       </div>
     </motion.section>
+
   );
 };

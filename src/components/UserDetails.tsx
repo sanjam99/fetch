@@ -22,6 +22,7 @@ const fallbackIconDataUrl = `data:image/svg+xml;base64,${btoa(`
 
 interface UserDetailsProps {
   user: User | null;
+  
 }
 
 const UserDetails: React.FC<UserDetailsProps> = ({ user }) => {

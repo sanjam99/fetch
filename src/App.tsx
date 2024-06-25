@@ -46,7 +46,7 @@ const App: React.FC = () => {
     <div className="flex flex-col">
       <AuroraHero />
       <div className="flex">
-        <div className="w-1/2 p-4 max-h-screen overflow-y-auto border-r">
+        <div className="w-1/2 p-4 max-h-screen overflow-y-auto border-r" id='here'>
           <h1 className="text-2xl font-semibold mb-4">Users</h1>
           <UserList users={data || []} onUserClick={handleUserClick} />
         </div>
